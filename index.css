@@ -21,27 +21,37 @@ body {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  margin-left: 10px;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(185, 214, 139);
-  padding-top: 30px;
+  background-color: rgb(61, 165, 78);
+  padding-top: 25px;
   border-radius: 20px 20px 0 0;
   align-items: center;
+  margin-bottom: 10px;
 }
 .whiteCenter {
   border-bottom: solid rgb(255, 255, 255);
-  border-width: 30px;
+  border-width: 25px;
   display: block;
   width: 50%;
-  border-radius: 0 0 60px 60px;
+  border-radius: 0 0 80px 80px;
   position: absolute;
   left: 25%;
 }
 
 .nameDiv {
-  margin-right: 100px;
+  margin-right: 90px;
+}
+.avatarName {
+  margin: 0;
+}
+.avatarAvailable {
+  margin: 0;
+  font-size: small;
+  color: rgb(87, 87, 87);
 }
 
 .dot {
@@ -68,14 +78,89 @@ body {
   border-radius: 100%;
   border: 2px solid white;
 }
-.dogsImages img {
-  width: 60px;
+
+.leftSideChat {
+  background-color: hsl(206, 6%, 79%);
+  max-width: 60%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px 20px 20px 5px;
+  font-size: 13px;
+  text-align: left;
 }
+.rightSideChat {
+  background-color: rgb(163, 212, 255);
+  max-width: 60%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px 20px 5px 20px;
+  font-size: 13px;
+  text-align: left;
+  align-self: flex-end;
+}
+
+.dogsImages img {
+  width: 50px;
+  border-radius: 10px;
+}
+.dogsImages {
+  align-self: flex-end;
+  margin-right: 5px;
+  padding: 5px;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  border: 2px solid white;
+}
+
+.priceList {
+  display: flex;
+  max-width: 70%;
+  height: 40px;
+  background-color: rgb(0, 209, 209);
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px 25px 25px 25px;
+  margin: 5px;
+  padding: 5px;
+}
+.inputForm {
+  display: flex;
+  background-color: rgb(61, 165, 78);
+  height: 40px;
+  max-width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px 25px 25px 25px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
 .rightArrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  border: solid black;
+  border: solid rgb(255, 255, 255);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  align-self: center;
+  margin-left: 30%;
+}
+.inputText {
+  border: none;
+  background: none;
+}
+.arrowBackground {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  background-color: black;
+  margin-right: -10px;
 }
