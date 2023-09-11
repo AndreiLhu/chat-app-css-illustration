@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* first container */
+
+.firstContainer {
+  background-color: bisque;
+  max-width: 400px;
+}
+.mainTable tr {
+  display: flex;
+  flex-direction: column;
+}
+.avatarImage {
+  width: 60px;
+}
+.dogsImages img {
+  width: 60px;
+}
