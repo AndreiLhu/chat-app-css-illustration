@@ -1,23 +1,61 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(225, 225, 225);
+  background-color: linear-gradient(
+    180deg,
+    rgba(233, 66, 255, 1) 0%,
+    rgba(136, 56, 255, 1) 100%
+  );
+}
+
+/* .mainBackgroundLeft {
+  background-color: linear-gradient(
+    180deg,
+    rgba(233, 66, 255, 1) 0%,
+    rgba(136, 56, 255, 1) 100%
+  );
+  width: 200px;
+} */
+
+@media screen and (min-width: 900px) {
+  .mainContainer {
+    display: flex;
+  }
+  .secondContainer {
+    max-width: 500px;
+    margin: auto;
+    margin-left: 30px;
+  }
+  .firstContainer {
+    left: 50px;
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .secondContainer {
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 /* first container */
 
 .firstContainer {
-  background-color: bisque;
+  background-color: hsl(270, 20%, 96%);
   max-width: 300px;
-  border: 10px solid white;
+  border: 10px solid hsl(0, 0%, 100%);
   border-radius: 30px;
   position: relative;
-  /* margin: auto; */
-  margin-left: 100px;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
 .leftArrow {
   transform: rotate(135deg);
-  border: solid black;
+  border: solid hsl(0, 0%, 100%);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -26,14 +64,18 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(61, 165, 78);
+  background: linear-gradient(
+    203deg,
+    rgba(233, 66, 255, 1) 8%,
+    rgba(103, 0, 255, 1) 100%
+  );
   padding-top: 25px;
   border-radius: 20px 20px 0 0;
   align-items: center;
   margin-bottom: 10px;
 }
 .whiteCenter {
-  border-bottom: solid rgb(255, 255, 255);
+  border-bottom: solid hsl(0, 0%, 100%);
   border-width: 25px;
   display: block;
   width: 50%;
@@ -47,23 +89,24 @@ body {
 }
 .avatarName {
   margin: 0;
+  color: hsl(0, 0%, 100%);
 }
 .avatarAvailable {
   margin: 0;
   font-size: small;
-  color: rgb(87, 87, 87);
+  color: hsl(276, 100%, 81%);
 }
 
 .dot {
-  height: 5px;
-  width: 5px;
-  background-color: #ffffff;
+  height: 3px;
+  width: 3px;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 50%;
   display: flex;
   margin: 2px;
 }
 .dotsDiv {
-  margin-right: 10px;
+  margin-right: 15px;
   margin-top: 10px;
 }
 
@@ -76,20 +119,22 @@ body {
   height: 100%;
   margin: 5px;
   border-radius: 100%;
-  border: 2px solid white;
+  border: 2px solid hsl(0, 0%, 100%);
 }
 
 .leftSideChat {
-  background-color: hsl(206, 6%, 79%);
+  background-color: hsl(276, 100%, 88%);
   max-width: 60%;
   margin: 5px;
   padding: 5px;
   border-radius: 20px 20px 20px 5px;
   font-size: 13px;
   text-align: left;
+  color: hsl(276, 55%, 52%);
 }
 .rightSideChat {
-  background-color: rgb(163, 212, 255);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
   max-width: 60%;
   margin: 5px;
   padding: 5px;
@@ -97,6 +142,7 @@ body {
   font-size: 13px;
   text-align: left;
   align-self: flex-end;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
 }
 
 .dogsImages img {
@@ -113,14 +159,20 @@ body {
   width: 20px;
   border-radius: 50%;
   display: flex;
-  border: 2px solid white;
+  border: 2px solid hsl(289, 100%, 72%);
 }
 
 .priceList {
   display: flex;
   max-width: 70%;
   height: 40px;
-  background-color: rgb(0, 209, 209);
+
+  background: linear-gradient(
+    87deg,
+    rgba(233, 66, 255, 1) 8%,
+    rgba(103, 0, 255, 1) 100%
+  );
+  color: hsl(0, 0%, 100%);
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -130,8 +182,8 @@ body {
 }
 .inputForm {
   display: flex;
-  background-color: rgb(61, 165, 78);
-  height: 40px;
+  background-color: hsl(0, 0%, 100%);
+  height: 30px;
   max-width: 80%;
   justify-content: space-around;
   align-items: center;
@@ -140,6 +192,7 @@ body {
   margin: auto;
   padding: 5px;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .rightArrow {
@@ -161,6 +214,18 @@ body {
   width: 30px;
   border-radius: 50%;
   display: flex;
-  background-color: black;
+  background-color: hsl(271, 36%, 24%);
   margin-right: -10px;
+}
+
+/* second container */
+
+.secondContainer {
+  font-size: 20px;
+}
+.secondContainer h1 {
+  color: hsl(271, 36%, 24%);
+}
+.secondContainer p {
+  color: hsl(270, 7%, 64%);
 }
