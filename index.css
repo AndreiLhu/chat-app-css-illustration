@@ -1,21 +1,7 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  background-color: linear-gradient(
-    180deg,
-    rgba(233, 66, 255, 1) 0%,
-    rgba(136, 56, 255, 1) 100%
-  );
 }
-
-/* .mainBackgroundLeft {
-  background-color: linear-gradient(
-    180deg,
-    rgba(233, 66, 255, 1) 0%,
-    rgba(136, 56, 255, 1) 100%
-  );
-  width: 200px;
-} */
 
 @media screen and (min-width: 900px) {
   .mainContainer {
@@ -28,7 +14,7 @@ body {
   }
   .firstContainer {
     left: 50px;
-    top: 70px;
+    top: 40px;
   }
 }
 
@@ -38,9 +24,37 @@ body {
     position: relative;
     padding: 20px;
     text-align: center;
+    margin-top: 20px;
+  }
+
+  .mainBackgroundLeft {
+    margin-top: -5%;
+    width: 50%;
   }
 }
 
+.mainBackgroundLeft {
+  background: linear-gradient(
+    180deg,
+    rgba(233, 66, 255, 1) 0%,
+    rgba(136, 56, 255, 1) 100%
+  );
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0 0 100% 0;
+}
+.mainBackgroundRight {
+  background: rgb(253, 246, 255);
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 100% 0 0 0;
+}
 /* first container */
 
 .firstContainer {
@@ -50,7 +64,7 @@ body {
   border-radius: 30px;
   position: relative;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 4%;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
 .leftArrow {
@@ -126,7 +140,7 @@ body {
   background-color: hsl(276, 100%, 88%);
   max-width: 60%;
   margin: 5px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 20px 20px 20px 5px;
   font-size: 13px;
   text-align: left;
@@ -137,7 +151,7 @@ body {
   color: hsl(271, 15%, 43%);
   max-width: 60%;
   margin: 5px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 20px 20px 5px 20px;
   font-size: 13px;
   text-align: left;
@@ -225,6 +239,7 @@ body {
 }
 .secondContainer h1 {
   color: hsl(271, 36%, 24%);
+  margin-bottom: 20px;
 }
 .secondContainer p {
   color: hsl(270, 7%, 64%);
